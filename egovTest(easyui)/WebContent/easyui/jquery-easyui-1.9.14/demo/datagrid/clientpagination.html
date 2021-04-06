@@ -85,11 +85,7 @@
 
 			var loadDataMethod = $.fn.datagrid.methods.loadData;
 			var deleteRowMethod = $.fn.datagrid.methods.deleteRow;
-			$
-					.extend(
-							$.fn.datagrid.methods,
-							{
-								clientPaging : function(jq) {
+			$.extend($.fn.datagrid.methods, { clientPaging : function(jq) {
 									return jq.each(function() {
 										var dg = $(this);
 										var state = dg.data('datagrid');
